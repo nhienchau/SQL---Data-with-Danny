@@ -14,7 +14,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-16 items-center">
-          <div className="font-bold text-xl flex-none">Portfolio</div>
+          <div className="font-bold text-xl flex-none">SQL Projects - Data with Danny</div>
           <nav className="hidden md:flex gap-6 justify-center flex-1 mx-4">
             <div className="flex gap-6 justify-center">
               <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -64,7 +64,7 @@ export default function Home() {
                   Available for hire
                 </Badge> */}
 
-                <TypewriterText text={"Hi, I'm Nhien Chau"} speed={100} />
+                <TypewriterText text={"Welcome!"} speed={100} />
 
 
                 <p className="text-xl text-muted-foreground">
@@ -409,7 +409,7 @@ export default function Home() {
 
       <footer className="border-t py-8">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-          <p className="text-muted-foreground">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p className="text-muted-foreground">© {new Date().getFullYear()} Nhien Chau. All rights reserved.</p>
           {/* <div className="flex items-center gap-4 mt-4">
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
