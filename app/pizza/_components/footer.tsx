@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+export function Footer() {
   return (
     <footer className="border-t py-8">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
@@ -10,4 +10,3 @@ function Footer() {
   );
 }
 
-export default Footer; 
