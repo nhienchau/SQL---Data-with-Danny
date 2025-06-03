@@ -9,7 +9,7 @@ export function PizzaNavigation() {
 
   const navItems = [
     { href: "/", label: "Overview", icon: Home },
-    { href: "/order-volume", label: "Order Volume", icon: BarChart3 },
+    { href: "/pizza/order", label: "Order Volume", icon: BarChart3 },
     { href: "/delivery-experience", label: "Delivery & Experience", icon: Truck },
     { href: "/topping-optimization", label: "Topping Optimization", icon: Settings },
   ]
