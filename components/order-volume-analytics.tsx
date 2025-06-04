@@ -194,6 +194,10 @@ FROM pizza_runner.customer_orders;`,
                   <pre className="text-xs text-green-400 whitespace-pre-wrap">{queries[activeQuery].sql}</pre>
                 </div>
               </div>
+              {/* Reccommendation */}
+              <div>
+                
+              </div>
             </div>
           </div>
 

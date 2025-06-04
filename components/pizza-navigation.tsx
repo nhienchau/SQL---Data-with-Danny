@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Pizza, BarChart3, Truck, Settings, Home } from "lucide-react"
+import { Pizza, BarChart3, PhoneCall, Settings, Home } from "lucide-react"
 
 export function PizzaNavigation() {
   const pathname = usePathname()
@@ -10,8 +10,8 @@ export function PizzaNavigation() {
   const navItems = [
     { href: "/", label: "Overview", icon: Home },
     { href: "/pizza/order", label: "Order Volume", icon: BarChart3 },
-    { href: "/delivery-experience", label: "Delivery & Experience", icon: Truck },
-    { href: "/topping-optimization", label: "Topping Optimization", icon: Settings },
+    { href: "/pizza/pizza-toppings", label: "Topping Optimization", icon: Settings },
+    { href: "https://ai-agent-pizza-demo.streamlit.app/", label: "Pizza AI Agent", icon: PhoneCall } ,
   ]
 
   return (
