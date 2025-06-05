@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import { Pizza, TrendingUp, Database, Star } from "lucide-react"
+import { TooltipProps } from 'recharts'
 // import { PizzaToppingsTable } from "@/components/pizza-topping-tables"
 
 // Sample data for topping optimization
@@ -36,7 +37,7 @@ const toppingCombinationsData = [
 //   { topping: "Bacon", cost: 1.35, price: 3.0, margin: 55, volume: 345 },
 // ]
 
-const COLORS = ["#F97316", "#10B981", "#3B82F6", "#EF4444", "#8B5CF6", "#F59E0B", "#06B6D4", "#84CC16"]
+// const COLORS = ["#F97316", "#10B981", "#3B82F6", "#EF4444", "#8B5CF6", "#F59E0B", "#06B6D4", "#84CC16"]
 
 export function ToppingOptimizationAnalytics() {
   const [activeQuery, setActiveQuery] = useState(0)
@@ -181,7 +182,7 @@ ORDER BY month DESC, monthly_orders DESC;`,
     },
   ]
 
-  const CustomTooltip = ({ active, payload, label }: any) => {
+  const CustomTooltip = ({ active, payload, label }: TooltipProps<any, string>) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">

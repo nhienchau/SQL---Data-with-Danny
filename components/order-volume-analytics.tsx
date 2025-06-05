@@ -13,6 +13,7 @@ import {
   Area,
 } from "recharts"
 import { Calendar, TrendingUp, Clock, Pizza, Database } from "lucide-react"
+import { TooltipProps } from 'recharts'
 
 // Sample data for order volume analysis
 const weeklyOrderData = [
@@ -24,12 +25,12 @@ const weeklyOrderData = [
 
 
 const hourlyOrderData = [
-  { hour: "11 AM", orders: 1},
-  { hour: "1 PM", orders: 3},
-  { hour: "6 PM", orders: 3},
-  { hour: "7 PM", orders: 1},
-  { hour: "9 PM", orders: 3},
-  { hour: "11 PM", orders: 3},
+  { hour: "11 AM", orders: 1 },
+  { hour: "1 PM", orders: 3 },
+  { hour: "6 PM", orders: 3 },
+  { hour: "7 PM", orders: 1 },
+  { hour: "9 PM", orders: 3 },
+  { hour: "11 PM", orders: 3 },
 ]
 
 // const monthlyTrendData = [
@@ -81,24 +82,26 @@ ORDER BY hour_of_day;`,
 FROM pizza_runner.customer_orders;`,
     },
   ]
-
-  const CustomTooltip = ({ active, payload, label }: any) => {
-    if (active && payload && payload.length) {
-      return (
-        <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">
-          <p className="text-white font-medium">{`${label}`}</p>
-          {payload.map((entry: any, index: number) => (
-            <p key={index} className="text-sm" style={{ color: entry.color }}>
-              {`${entry.dataKey}: ${
-                entry.dataKey.includes("revenue") ? `$${entry.value.toLocaleString()}` : entry.value.toLocaleString()
-              }`}
-            </p>
-          ))}
-        </div>
-      )
-    }
-    return null
+  //  Error when deploy on Vercel 'ANY' --> Fix
+const CustomTooltip = ({ active, payload, label }: TooltipProps<any, string>) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">
+        <p className="text-white font-medium">{label}</p>
+        {payload.map((entry, index) => (
+          <p key={index} className="text-sm" style={{ color: entry.color }}>
+            {`${entry.dataKey}: ${
+              entry.dataKey?.toString().includes('revenue')
+                ? `$${entry.value?.toLocaleString()}`
+                : entry.value?.toLocaleString()
+            }`}
+          </p>
+        ))}
+      </div>
+    )
   }
+  return null
+}
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-orange-950 via-red-950 to-black">
@@ -131,7 +134,7 @@ FROM pizza_runner.customer_orders;`,
               <p className="text-xl font-bold text-white">21-23 PM</p>
               <p className="text-xs text-green-400">3 orders/hour</p>
             </div>
-      {/* Reccommendation for future analysis  */}
+            {/* Reccommendation for future analysis  */}
             {/* <div className="bg-zinc-800/50 rounded-lg p-4">
               <div className="flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-purple-400" />
@@ -167,11 +170,10 @@ FROM pizza_runner.customer_orders;`,
                   <button
                     key={index}
                     onClick={() => setActiveQuery(index)}
-                    className={`w-full text-left p-3 rounded-lg border transition-colors ${
-                      activeQuery === index
+                    className={`w-full text-left p-3 rounded-lg border transition-colors ${activeQuery === index
                         ? "border-orange-500 bg-orange-500/10"
                         : "border-zinc-700 hover:border-orange-600"
-                    }`}
+                      }`}
                   >
                     <h3 className="font-medium text-sm text-white">{query.title}</h3>
                     <p className="text-xs text-orange-300 mt-1">{query.description}</p>
@@ -194,7 +196,7 @@ FROM pizza_runner.customer_orders;`,
               </div>
               {/* Reccommendation */}
               <div>
-                
+
               </div>
             </div>
           </div>
