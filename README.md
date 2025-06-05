@@ -1,4 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## DATA WITH DANNY 
+This is a Pizza Runner project in ** 8 Week SQL Challenge **
+Website: https://8weeksqlchallenge.com/
+/br
+# 🍕 AI Pizza Recommender
+
+An intelligent and delicious way to choose your next pizza! This lightweight AI agent helps users find the best pizza options based on their **location**, **flavor preferences**, and **estimated calories**. Whether you're feeling spicy, cheesy, or veggie—this project has your cravings covered.
+
+![pizza-banner](https://images.unsplash.com/photo-1601924582971-c8991fbbd74c) <!-- You can replace with your own image or remove -->
+
+## 🚀 Features
+
+- 🔍 Recommends pizzas based on:
+  - Location (city-based suggestions)
+  - Taste preferences (e.g., spicy, cheesy, vegetarian)
+  - Calorie target (e.g., under 500 kcal)
+- 🧠 Built with simple AI logic — perfect for beginners or data enthusiasts
+- 🌐 Designed to be extendable (add delivery APIs, map data, etc.)
+- 💡 Educational project: great for learning Python, AI agents, and user input handling
+
+---
+
+## 🧑‍🍳 Demo
+
+Run the pizza recommender in your terminal and let the agent suggest what to order!
+
+```bash
+python pizza-agent.py
+```
+# 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+Suggest new pizza types or features
+
+Improve recommendation logic for Kcal calculation & Location API 
+
+Create a Streamlit web UI
+
+
+
+
+<!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -27,7 +69,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome! -->
 
 ## Deploy on Vercel
 
