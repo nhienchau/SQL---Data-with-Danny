@@ -182,7 +182,7 @@ ORDER BY month DESC, monthly_orders DESC;`,
     },
   ]
 
-  const CustomTooltip = ({ active, payload, label }: TooltipProps<any, string>) => {
+  const CustomTooltip = ({ active, payload, label }: TooltipProps<number, string>) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">
