@@ -9,12 +9,10 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  LineChart,
-  Line,
   AreaChart,
   Area,
 } from "recharts"
-import { Calendar, TrendingUp, Clock, Pizza, Database, Play } from "lucide-react"
+import { Calendar, TrendingUp, Clock, Pizza, Database } from "lucide-react"
 
 // Sample data for order volume analysis
 const weeklyOrderData = [
@@ -34,14 +32,14 @@ const hourlyOrderData = [
   { hour: "11 PM", orders: 3},
 ]
 
-const monthlyTrendData = [
-  { month: "Jan", orders: 4250, revenue: 63750 },
-  { month: "Feb", orders: 4180, revenue: 62700 },
-  { month: "Mar", orders: 4890, revenue: 73350 },
-  { month: "Apr", orders: 5120, revenue: 76800 },
-  { month: "May", orders: 5340, revenue: 80100 },
-  { month: "Jun", orders: 5680, revenue: 85200 },
-]
+// const monthlyTrendData = [
+//   { month: "Jan", orders: 4250, revenue: 63750 },
+//   { month: "Feb", orders: 4180, revenue: 62700 },
+//   { month: "Mar", orders: 4890, revenue: 73350 },
+//   { month: "Apr", orders: 5120, revenue: 76800 },
+//   { month: "May", orders: 5340, revenue: 80100 },
+//   { month: "Jun", orders: 5680, revenue: 85200 },
+// ]
 
 export function OrderVolumeAnalytics() {
   const [activeQuery, setActiveQuery] = useState(0)

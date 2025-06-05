@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { TrendingUp, TrendingDown, DollarSign, Package, Star, ChevronUp, ChevronDown } from "lucide-react"
+import { TrendingUp, TrendingDown } from "lucide-react"
 
 type ToppingData = {
   id: number
@@ -275,62 +275,62 @@ export function PizzaToppingsTable() {
 
   const categories = ["all", ...Array.from(new Set(toppingsData.map((t) => t.category)))]
 
-  const handleSort = (field: SortField) => {
-    if (field === sortField) {
-      setSortDirection(sortDirection === "asc" ? "desc" : "asc")
-    } else {
-      setSortField(field)
-      setSortDirection("desc")
-    }
-  }
+//   const handleSort = (field: SortField) => {
+//     if (field === sortField) {
+//       setSortDirection(sortDirection === "asc" ? "desc" : "asc")
+//     } else {
+//       setSortField(field)
+//       setSortDirection("desc")
+//     }
+//   }
 
-  const filteredAndSortedData = toppingsData
-    .filter((topping) => filterCategory === "all" || topping.category === filterCategory)
-    .sort((a, b) => {
-      const aValue = a[sortField]
-      const bValue = b[sortField]
+//   const filteredAndSortedData = toppingsData
+//     .filter((topping) => filterCategory === "all" || topping.category === filterCategory)
+//     .sort((a, b) => {
+//       const aValue = a[sortField]
+//       const bValue = b[sortField]
 
-      if (typeof aValue === "string" && typeof bValue === "string") {
-        return sortDirection === "asc" ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue)
-      }
+//       if (typeof aValue === "string" && typeof bValue === "string") {
+//         return sortDirection === "asc" ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue)
+//       }
 
-      if (typeof aValue === "number" && typeof bValue === "number") {
-        return sortDirection === "asc" ? aValue - bValue : bValue - aValue
-      }
+//       if (typeof aValue === "number" && typeof bValue === "number") {
+//         return sortDirection === "asc" ? aValue - bValue : bValue - aValue
+//       }
 
-      return 0
-    })
+//       return 0
+//     })
 
-  const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-    }).format(amount)
-  }
+//   const formatCurrency = (amount: number) => {
+//     return new Intl.NumberFormat("en-US", {
+//       style: "currency",
+//       currency: "USD",
+//     }).format(amount)
+//   }
 
-  const getTrendIcon = (trend: "up" | "down" | "stable", value: number) => {
-    if (trend === "up") {
-      return <TrendingUp className="w-4 h-4 text-green-400" />
-    } else if (trend === "down") {
-      return <TrendingDown className="w-4 h-4 text-red-400" />
-    }
-    return <div className="w-4 h-4 bg-zinc-600 rounded-full"></div>
-  }
+//   const getTrendIcon = (trend: "up" | "down" | "stable", value: number) => {
+//     if (trend === "up") {
+//       return <TrendingUp className="w-4 h-4 text-green-400" />
+//     } else if (trend === "down") {
+//       return <TrendingDown className="w-4 h-4 text-red-400" />
+//     }
+//     return <div className="w-4 h-4 bg-zinc-600 rounded-full"></div>
+//   }
 
-  const getStockLevelColor = (level: number) => {
-    if (level >= 80) return "text-green-400"
-    if (level >= 60) return "text-yellow-400"
-    return "text-red-400"
-  }
+//   const getStockLevelColor = (level: number) => {
+//     if (level >= 80) return "text-green-400"
+//     if (level >= 60) return "text-yellow-400"
+//     return "text-red-400"
+//   }
 
-  const getSeasonalityBadge = (seasonality: string) => {
-    const colors = {
-      high: "bg-green-500/20 text-green-400 border-green-500/30",
-      medium: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
-      low: "bg-red-500/20 text-red-400 border-red-500/30",
-    }
-    return colors[seasonality as keyof typeof colors] || colors.medium
-  }
+//   const getSeasonalityBadge = (seasonality: string) => {
+//     const colors = {
+//       high: "bg-green-500/20 text-green-400 border-green-500/30",
+//       medium: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+//       low: "bg-red-500/20 text-red-400 border-red-500/30",
+//     }
+//     return colors[seasonality as keyof typeof colors] || colors.medium
+//   }
 
 //   const SortButton = ({ field, children }: { field: SortField; children: React.ReactNode }) => (
 //     <button

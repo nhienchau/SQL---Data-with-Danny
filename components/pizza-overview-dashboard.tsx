@@ -1,4 +1,4 @@
-import { Pizza, TrendingUp, Clock, DollarSign, Star, PhoneCall } from "lucide-react"
+import { Pizza, TrendingUp, PhoneCall } from "lucide-react"
 
 export function PizzaOverviewDashboard() {
   return (

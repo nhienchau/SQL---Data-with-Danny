@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
-import { Pizza, TrendingUp, DollarSign, Package, Database, Play, Star } from "lucide-react"
+import { Pizza, TrendingUp, Database, Star } from "lucide-react"
 // import { PizzaToppingsTable } from "@/components/pizza-topping-tables"
 
 // Sample data for topping optimization
@@ -17,24 +17,24 @@ const toppingCombinationsData = [
   { combination: "Vegetarian", orders: 4 },
 ]
 
-const seasonalTrendsData = [
-  { month: "Jan", pepperoni: 145, mushrooms: 98, sausage: 87, vegetables: 76 },
-  { month: "Feb", pepperoni: 134, mushrooms: 89, sausage: 78, vegetables: 82 },
-  { month: "Mar", pepperoni: 156, mushrooms: 102, sausage: 91, vegetables: 89 },
-  { month: "Apr", pepperoni: 167, mushrooms: 112, sausage: 95, vegetables: 98 },
-  { month: "May", pepperoni: 178, mushrooms: 125, sausage: 103, vegetables: 112 },
-  { month: "Jun", pepperoni: 189, mushrooms: 134, sausage: 108, vegetables: 125 },
-]
+// const seasonalTrendsData = [
+//   { month: "Jan", pepperoni: 145, mushrooms: 98, sausage: 87, vegetables: 76 },
+//   { month: "Feb", pepperoni: 134, mushrooms: 89, sausage: 78, vegetables: 82 },
+//   { month: "Mar", pepperoni: 156, mushrooms: 102, sausage: 91, vegetables: 89 },
+//   { month: "Apr", pepperoni: 167, mushrooms: 112, sausage: 95, vegetables: 98 },
+//   { month: "May", pepperoni: 178, mushrooms: 125, sausage: 103, vegetables: 112 },
+//   { month: "Jun", pepperoni: 189, mushrooms: 134, sausage: 108, vegetables: 125 },
+// ]
 
-const profitabilityData = [
-  { topping: "Bell Peppers", cost: 0.75, price: 3.0, margin: 75, volume: 645 },
-  { topping: "Onions", cost: 0.65, price: 3.0, margin: 78, volume: 567 },
-  { topping: "Mushrooms", cost: 0.85, price: 3.0, margin: 72, volume: 890 },
-  { topping: "Sausage", cost: 0.95, price: 3.0, margin: 68, volume: 756 },
-  { topping: "Pepperoni", cost: 1.05, price: 3.0, margin: 65, volume: 1234 },
-  { topping: "Extra Cheese", cost: 1.2, price: 3.0, margin: 60, volume: 398 },
-  { topping: "Bacon", cost: 1.35, price: 3.0, margin: 55, volume: 345 },
-]
+// const profitabilityData = [
+//   { topping: "Bell Peppers", cost: 0.75, price: 3.0, margin: 75, volume: 645 },
+//   { topping: "Onions", cost: 0.65, price: 3.0, margin: 78, volume: 567 },
+//   { topping: "Mushrooms", cost: 0.85, price: 3.0, margin: 72, volume: 890 },
+//   { topping: "Sausage", cost: 0.95, price: 3.0, margin: 68, volume: 756 },
+//   { topping: "Pepperoni", cost: 1.05, price: 3.0, margin: 65, volume: 1234 },
+//   { topping: "Extra Cheese", cost: 1.2, price: 3.0, margin: 60, volume: 398 },
+//   { topping: "Bacon", cost: 1.35, price: 3.0, margin: 55, volume: 345 },
+// ]
 
 const COLORS = ["#F97316", "#10B981", "#3B82F6", "#EF4444", "#8B5CF6", "#F59E0B", "#06B6D4", "#84CC16"]
 
