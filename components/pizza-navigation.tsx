@@ -8,7 +8,7 @@ export function PizzaNavigation() {
   const pathname = usePathname()
 
   const navItems = [
-    { href: "/", label: "Overview", icon: Home },
+    { href: "/", label: "SQL - Data with Danny", icon: Home },
     { href: "/pizza/order", label: "Order Volume", icon: BarChart3 },
     { href: "/pizza/pizza-toppings", label: "Topping Optimization", icon: Settings },
     { href: "https://ai-agent-pizza-demo.streamlit.app/", label: "Pizza AI Agent", icon: PhoneCall } ,

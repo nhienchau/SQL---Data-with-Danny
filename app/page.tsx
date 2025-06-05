@@ -68,22 +68,18 @@ export default function Home() {
 
 
                 <p className="text-xl text-muted-foreground">
-                  A passionate BI Analyst specializing in transforming data into actionable insights and driving data-informed decision-making.
-                </p>
+                  Learn Data Analytics, Data Science & Machine Learning under guided mentorship and deliver challenging projects in a unique data apprenticeship.                </p>
                 <div className="flex gap-4">
                   <Button asChild>
                     <Link href="#projects">
                       View My Work <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="#contact">Contact Me</Link>
-                  </Button>
                 </div>
               </div>
               <div className="flex-1 flex justify-center">
                 <Avatar className="h-64 w-64">
-                  <AvatarImage src="/images/profile_pic.jpg" alt="ProfilePicture" />
+                  <AvatarImage src="/images/Data_with_Danny.png" alt="DatawithDanny" />
                   <AvatarFallback>YN</AvatarFallback>
                 </Avatar>
               </div>
@@ -95,11 +91,11 @@ export default function Home() {
         <section id="about" className="w-full py-24">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
             <div className="flex flex-col items-center text-center space-y-4">
-              <Badge>About Me</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold">Get to know me</h2>
+              <Badge>About Project</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold">Get to Data World</h2>
               <div className="max-w-3xl">
                 <p className="text-muted-foreground text-lg">
-                  A BI Analyst with 2.5+ years of experience in database design, dashboard development, and custom business metric creation—particularly focused on logistics and payment management. Skilled in turning complex data into clear, actionable insights that support strategic decision-making.
+                  The 8 Week SQL Challenge is proudly brought to you by the <Link href="https://8weeksqlchallenge.com/" className="text-blue-600 hover:text-blue-800 underline transition-colors">Data With Danny</Link> virtual data apprenticeship program to celebrate the launch of the Serious SQL course!
                 </p>
               </div>
             </div>
@@ -112,7 +108,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Data Analysis</h3>
                   <p className="text-muted-foreground">
-                    I extract actionable insights from complex datasets to support strategic decision-making using SQL, LookML, Excel, and BI tools like Looker or Power BI.
+                    Extract actionable insights from complex datasets to support strategic decision-making using complex SQL.
                   </p>
                 </CardContent>
               </Card>
@@ -124,7 +120,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Database Management</h3>
                   <p className="text-muted-foreground">
-                    I manage and query large-scale datasets efficiently using cloud data warehouses such as Google BigQuery, ensuring scalable and reliable data pipelines.
+                    Learn large-scale datasets efficiently using cloud data pipelines designed by Danny.
                   </p>
                 </CardContent>
               </Card>
@@ -136,7 +132,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold">Data Visualization & Reporting</h3>
                   <p className="text-muted-foreground">
-                    I design intuitive dashboards and visual reports to communicate findings effectively and drive data-informed business strategies.
+                    Create intuitive dashboards and visual reports to communicate findings effectively and drive data-informed business strategies.
                   </p>
                 </CardContent>
               </Card>
@@ -163,38 +159,36 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="aspect-video relative">
                   <img
-                    src="/images/credit_risk.jpeg"
-                    alt="Credit-analysis"
-                    className="object-cover w- h-48"
+                    src="/images/pizza-runner.png"
+                    alt="Pizza-analysis"
+                    className="object-cover w-full h-48"
                   />
                 </div>
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-bold text-xl">Credit Analysis</h3>
+                      <h3 className="font-bold text-xl">Pizza Runner</h3>
                       {/* <Badge variant="outline">Web App</Badge> */}
                     </div>
                     <p className="text-muted-foreground">
-                      A machine learning project that predicts the likelihood of loan default based on customer attributes such as income, credit history, and debt-to-income ratio. Built classification models to assist financial institutions in minimizing risk and making informed lending decisions.
-                    </p>
+                      Pizza Runner is a smart and interactive system designed to streamline the pizza ordering experience by understanding and utilizing customer flavor preferences. The core objective of this project is to build an efficient backend service or AI agent that gathers pizza flavor information from customers and uses it to enhance their ordering journey.                    </p>
                   </div>
-                  {/* <div className="flex gap-2 flex-wrap"> */}
-                  <Badge variant="secondary">Python</Badge>
-                    {/* <Badge variant="secondary">Next.js</Badge>
-                      <Badge variant="secondary">Tailwind CSS</Badge> */}
-                  {/* </div> */}
+                  <div className="flex gap-2 flex-wrap">
+                    <Badge variant="secondary">Python</Badge>
+                    <Badge variant="secondary">SQL</Badge>
+                    <Badge variant="secondary">Tailwind CSS</Badge>
+                  </div>
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
-                      <Link href="https://github.com/nhienchau/Credit-Risk-Analysis">
+                      <Link href="https://github.com/nhienchau/SQL---Data-with-Danny">
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </Link>
                     </Button>
                     <Button size="sm" asChild>
-                      {/* <Link href="#" target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Demo
-                        </Link> */}
+                      <Link href="/pizza" target="_blank" rel="noopener noreferrer">
+                          Demo Website
+                        </Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -204,25 +198,23 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="aspect-video relative">
                   <img
-                    src="/images/retail_analysis.png"
-                    alt="Retail-analysis"
+                    src="/images/data-bank.png"
+                    alt="Data Bank"
                     className="object-cover w-full h-48"
                   />
                 </div>
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-bold text-xl">Retail Analysis</h3>
+                      <h3 className="font-bold text-xl">Data Bank</h3>
                     </div>
                     <p className="text-muted-foreground">
-                    Analyzed retail sales data to uncover trends, identify top-performing products, and evaluate customer purchasing behavior. Built dashboards and visualizations to support strategic business decisions and optimize sales performance.
-                    </p>
+                      Data Bank runs just like any other digital bank - but it is not only for banking activities, they also have the world of most secure distributed data storage platform!                    </p>
                   </div>
                   <div className="flex gap-2 flex-wrap">
-                  <Badge variant="secondary">SQL</Badge>
-                  <Badge variant="secondary">Power BI</Badge>
-                    {/* <Badge variant="secondary">Next.js</Badge>
-                      <Badge variant="secondary">Tailwind CSS</Badge> */}
+                    <Badge variant="secondary">Python</Badge>
+                    <Badge variant="secondary">SQL</Badge>
+                    <Badge variant="secondary">Tailwind CSS</Badge>
                   </div>
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
@@ -230,13 +222,10 @@ export default function Home() {
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </Link>
-                    </Button>
-                    <Button size="sm" asChild>
-                      {/* <Link href="#" target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Demo
-                        </Link> */}
-                    </Button>
+                    </ Button>
+                    <Button variant="outline" size="sm">
+                      <p>Coming Soon!</p>
+                    </ Button>
                   </div>
                 </CardContent>
               </Card>
@@ -245,25 +234,23 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="aspect-video relative">
                   <img
-                    src="/images/Data_with_Danny.png"
-                    alt="Retail-analysis"
+                    src="/images/balanced-tree.png"
+                    alt="Balanced Tree"
                     className="object-cover w-full h-48"
                   />
                 </div>
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-bold text-xl">Data Exploration</h3>
+                      <h3 className="font-bold text-xl">Balanced Tree</h3>
                     </div>
                     <p className="text-muted-foreground">
-                    8 - Week Challenge by Danny Ma.
-                    </p>
+                      Balanced Tree Clothing Company prides themselves on providing an optimised range of clothing and lifestyle wear for the modern adventurer                    </p>
                   </div>
                   <div className="flex gap-2 flex-wrap">
-                  <Badge variant="secondary">SQL</Badge>
-                  <Badge variant="secondary">Looker</Badge>
-                    {/* <Badge variant="secondary">Next.js</Badge>
-                      <Badge variant="secondary">Tailwind CSS</Badge> */}
+                    <Badge variant="secondary">Python</Badge>
+                    <Badge variant="secondary">SQL</Badge>
+                    <Badge variant="secondary">Tailwind CSS</Badge>
                   </div>
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
@@ -273,22 +260,21 @@ export default function Home() {
                       </Link>
                     </Button>
                     <Button size="sm" asChild>
-                      {/* <Link href="#" target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Demo
-                        </Link> */}
                     </Button>
+                    <Button variant="outline" size="sm">
+                      <p>Coming Soon!</p>
+                    </ Button>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
             <div className="flex justify-center pt-8">
-              <Button variant="outline" asChild>
+              {/* <Button variant="outline" asChild>
                 <Link href="#">
                   View All Projects <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </section>
