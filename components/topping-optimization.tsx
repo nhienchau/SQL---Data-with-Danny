@@ -4,6 +4,7 @@ import { useState } from "react"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import { Pizza, TrendingUp, Database, Star } from "lucide-react"
 import { TooltipProps } from 'recharts'
+import { ValueType, NameType } from 'recharts/types/component/DefaultTooltipContent'
 // import { PizzaToppingsTable } from "@/components/pizza-topping-tables"
 
 // Sample data for topping optimization
@@ -182,27 +183,29 @@ ORDER BY month DESC, monthly_orders DESC;`,
     },
   ]
 
-  const CustomTooltip = ({ active, payload, label }: TooltipProps<number, string>) => {
-    if (active && payload && payload.length) {
-      return (
-        <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">
-          <p className="text-white font-medium">{`${label}`}</p>
-          {payload.map((entry: any, index: number) => (
-            <p key={index} className="text-sm" style={{ color: entry.color }}>
-              {`${entry.dataKey}: ${
-                entry.dataKey.includes("revenue") || entry.dataKey.includes("price")
+  const CustomTooltip = ({ active, payload, label }: TooltipProps<ValueType, NameType>) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">
+        <p className="text-white font-medium">{label}</p>
+        {payload.map((entry, index) => (
+          <p key={index} className="text-sm" style={{ color: entry.color }}>
+            {`${entry.name}: ${
+              typeof entry.value === 'number'
+                ? entry.name?.toString().includes("revenue") || entry.name?.toString().includes("price")
                   ? `$${entry.value.toLocaleString()}`
-                  : entry.dataKey.includes("margin")
+                  : entry.name?.toString().includes("margin")
                     ? `${entry.value}%`
                     : entry.value.toLocaleString()
-              }`}
-            </p>
-          ))}
-        </div>
-      )
-    }
-    return null
+                : entry.value
+            }`}
+          </p>
+        ))}
+      </div>
+    )
   }
+  return null
+}
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-orange-950 via-red-950 to-black">
