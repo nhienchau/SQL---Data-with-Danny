@@ -33,15 +33,12 @@ python pizza-agent.py
 
 Contributions are welcome! Feel free to:
 
-Suggest new pizza types or features
-
-Improve recommendation logic for Kcal calculation & Location API 
-
-Create a Streamlit web UI
+- Suggest new pizza types or features
+- Improve recommendation logic for Kcal calculation & Location API 
+- Create a Streamlit web UI
 
 # 📩 Connect with me 
 
-Feel free to connect!
 
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
