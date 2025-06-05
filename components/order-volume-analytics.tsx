@@ -14,6 +14,7 @@ import {
 } from "recharts"
 import { Calendar, TrendingUp, Clock, Pizza, Database } from "lucide-react"
 import { TooltipProps } from 'recharts'
+import { ValueType, NameType } from 'recharts/types/component/DefaultTooltipContent'
 
 // Sample data for order volume analysis
 const weeklyOrderData = [
@@ -83,7 +84,7 @@ FROM pizza_runner.customer_orders;`,
     },
   ]
   //  Error when deploy on Vercel 'ANY' --> Fix
-const CustomTooltip = ({ active, payload, label }: TooltipProps<any, string>) => {
+const CustomTooltip = ({ active, payload, label }: TooltipProps<ValueType, NameType>) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-zinc-900 border border-orange-700 rounded-lg p-3 shadow-lg">
