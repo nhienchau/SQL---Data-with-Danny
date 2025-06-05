@@ -1,5 +1,5 @@
 ## DATA WITH DANNY 
-This is a Pizza Runner project in ** 8 Week SQL Challenge **
+This is a Pizza Runner project in **8 Week SQL Challenge**
 Website: https://8weeksqlchallenge.com/
 /br
 # 🍕 AI Pizza Recommender
@@ -16,7 +16,7 @@ An intelligent and delicious way to choose your next pizza! This lightweight AI 
   - Calorie target (e.g., under 500 kcal)
 - 🧠 Built with simple AI logic — perfect for beginners or data enthusiasts
 - 🌐 Designed to be extendable (add delivery APIs, map data, etc.)
-- 💡 Educational project: great for learning Python, AI agents, and user input handling
+- 💡 Educational project: great for learning SQL, basic Python, AI agents, and user input handling
 
 ---
 
@@ -36,6 +36,13 @@ Suggest new pizza types or features
 Improve recommendation logic for Kcal calculation & Location API 
 
 Create a Streamlit web UI
+
+# 📩 Connect with me 
+
+Feel free to connect!
+
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
 
 
 
