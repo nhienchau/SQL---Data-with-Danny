@@ -263,15 +263,15 @@ const toppingsData: ToppingData[] = [
   },
 ]
 
-type SortField = keyof ToppingData
-type SortDirection = "asc" | "desc"
+// type SortField = keyof ToppingData
+// type SortDirection = "asc" | "desc"
 
 export function PizzaToppingsTable() {
-  const [sortField, setSortField] = useState<SortField>("orders")
-  const [sortDirection, setSortDirection] = useState<SortDirection>("desc")
-  const [filterCategory, setFilterCategory] = useState<string>("all")
+//   const [sortField, setSortField] = useState<SortField>("orders")
+//   const [sortDirection, setSortDirection] = useState<SortDirection>("desc")
+//   const [filterCategory, setFilterCategory] = useState<string>("all")
 
-  const categories = ["all", ...Array.from(new Set(toppingsData.map((t) => t.category)))]
+//   const categories = ["all", ...Array.from(new Set(toppingsData.map((t) => t.category)))]
 
 //   const handleSort = (field: SortField) => {
 //     if (field === sortField) {
