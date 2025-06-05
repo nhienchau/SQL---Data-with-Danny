@@ -1,12 +1,11 @@
 ## DATA WITH DANNY 
 This is a Pizza Runner project in **[8 Week SQL Challenge](https://8weeksqlchallenge.com)**
-Website: https://8weeksqlchallenge.com/
+
 
 # 🍕 SQL Learning and build simple AI Pizza Recommender
 
 All datasets exist within the ```pizza_runner``` database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
-
-	---
+<hr> 
 An intelligent and delicious way to choose your next pizza! This lightweight AI agent helps users find the best pizza options based on their **location**, **flavor preferences**, and **estimated calories**. Whether you're feeling spicy, cheesy, or veggie—this project has your cravings covered.
 
 ![pizza-banner](https://images.unsplash.com/photo-1601924582971-c8991fbbd74c) <!-- You can replace with your own image or remove -->
