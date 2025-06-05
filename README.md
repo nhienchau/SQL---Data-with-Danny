@@ -1,6 +1,7 @@
 ## DATA WITH DANNY 
 This is a Pizza Runner project in **[8 Week SQL Challenge](https://8weeksqlchallenge.com)**
 
+	![Pizza Runner](pizza-runner.png)
 
 # 🍕 SQL Learning and build simple AI Pizza Recommender
 
@@ -40,8 +41,8 @@ Contributions are welcome! Feel free to:
 # 📩 Connect with me 
 
 
-![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)(quynhnhien510@gmail.com)
+![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)(https://www.linkedin.com/in/nhienchau/)
 
 
 
